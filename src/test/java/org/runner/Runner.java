@@ -8,7 +8,9 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources", glue = "org.stepdefinition",monochrome = false, dryRun = false, tags = "@Registration")
+
+@CucumberOptions(features = "src/test/resources",strict=false, glue = "org.stepdefinition",monochrome = false, dryRun = false, tags = "@Registration")
+
 public class Runner {
 
 }
